@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+        background: #eeeeee;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+    }
+    h1{
+        color:#000;
+        text-align: center;
+    }
+
+    .container{
+    width: 90%;
+    max-width: 1000px;
+    /* border:4px solid #000; */
+    margin: auto;
+    font-size:  50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .bloque{
+        background-color: blue;
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+        display: inline-block;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <div class="container">
+        <div class="block">
+            {%for i in range(3):%}
+                <div class=bloque></div>
+            {%endfor%}
+        </div>
+    </div>
+
+    
+</body>
+</html>
